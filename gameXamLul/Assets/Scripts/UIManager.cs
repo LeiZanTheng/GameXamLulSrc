@@ -9,9 +9,10 @@ public class UIManager : MonoBehaviour
     [HideInInspector] public int coinCounter = 0;
     [SerializeField] GameObject gameWinScreen;
     int curCoins;
-    bool haveWon;
+    bool haveWon = true;
     void Start()
     {
+        Time.timeScale = 1;
         HaveLost = false;
         gameOverText.SetActive(false);
         coinCounter = 0;
